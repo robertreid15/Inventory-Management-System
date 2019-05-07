@@ -169,6 +169,9 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
                              //   progress.hide();
                                // progress=null;
                             //}
+                            /*
+                            *       Admin is registered and password is 123456
+                            * */
                             if (ed.getText().toString().equals("seemagogia42@gmail.com"))
                             {
                                 Toast.makeText(MainActivity.this, "Welcome Admin", Toast.LENGTH_LONG).show();

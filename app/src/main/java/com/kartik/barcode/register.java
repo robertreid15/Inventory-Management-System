@@ -181,14 +181,14 @@ public class register extends AppCompatActivity
         });
     }
 
-    @Override
+    /*@Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode==gallery && resultCode==RESULT_OK)
         {
             Uri uri=data.getData();
-            StorageReference filepath=mstorage.child("photos").child(uri.getLastPathSegment());
+            StorageReference filepath = mstorage.child("photos").child(uri.getLastPathSegment());
             filepath.putFile(uri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>()
             {
                 @Override
@@ -196,13 +196,13 @@ public class register extends AppCompatActivity
                 {
                     Toast.makeText(register.this,"Upload done",Toast.LENGTH_SHORT).show();
 
-                    Uri download=taskSnapshot.getDownloadUrl();
+                    Uri download = StorageReference.getDownloadUrl();
                     Picasso.with(register.this).load(download).fit().centerCrop().into(img);
 
                 }
             });
 
-        /*Uri selectedImage = data.getData();
+        *//*Uri selectedImage = data.getData();
         Log.e("uRII",imageuri.toString());
         img.setImageURI(null);
         img.setImageURI(imageuri);
@@ -218,7 +218,7 @@ public class register extends AppCompatActivity
        // Log.e("String", picturePath);
 
         //img.setImageBitmap(BitmapFactory.decodeFile(picturePath));
-    */
+    *//*
     }
-}
+  }*/
 }
